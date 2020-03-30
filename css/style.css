@@ -1,0 +1,579 @@
+/*
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Tajawal', sans-serif;
+*/
+
+:root {
+    --first-color: #1dd3f8;
+    --second-color: #050505;
+    --third-color: #9857f2;
+    --fourth-color: #f2f2f2;
+    --blue-dark: #09264f;
+    --blue-light: #093996
+}
+
+body {
+    font-family: 'Tajawal', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+    font-family: 'Cairo', sans-serif;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/*========== Start nav ==========*/
+.navbar {
+    background: var(--blue-dark);
+}
+
+.navbar .navbar-brand img {
+    width: 80px
+}
+
+.navbar .nav-item a {
+    color: var(--fourth-color);
+    font-weight: 500;
+}
+
+.nav__btns button {
+    border: 0;
+    outline: transparent;
+    background: var(--first-color);
+    color: #fff;
+    border-radius: 20px;
+    padding: 4px 20px;
+    cursor: pointer;
+}
+
+.nav__btns button:first-child {
+    margin-left: 10px;
+}
+
+.nav__btns .nav__register {
+    color: var(--first-color);
+    background: var(--fourth-color);
+    border: 2px solid var(--first-color)
+}
+
+.navbar-toggler i.fa-list {
+    color: var(--first-color);
+}
+
+.nav__active {
+    /* background: var(--first-color);
+    color: #fff !important;
+    border-radius: 40px; */
+}
+/*========== Start nav ==========*/
+
+/*========== Start hero ==========*/
+.hero {
+    height: 100vh;
+    background: linear-gradient(to bottom, var(--blue-dark) 0%,var(--blue-light) 100%);
+}
+
+.hero__overlay {
+    position: relative;
+    z-index: 5;
+    height: 100%;
+    width: 100%;
+    background-image: url(../imgs/hero-bg.png);
+    background-repeat: no-repeat;
+    background-position: 1;
+    background-size: contain;
+    background-position: 0 101%;
+    /* background: #ddd; */
+}
+  
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+
+.hero {
+    overflow: hidden;
+}
+
+.hero__info {
+    color: #fff;
+    padding-top: 30vh
+}
+
+.hero__info h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+.hero__info p {
+    margin-bottom: 40px;
+}
+
+.hero__info a {
+    display: inline-block;
+    padding: 6px 40px;
+    border-radius: 20px;
+    font-size: 16px;
+    color: #fff;
+    background: var(--first-color);
+    transition: all .2s ease-in-out;
+}
+
+.hero__info a:hover {
+    background: #fff;
+    color: var(--first-color);
+}
+
+.hero__img {
+    margin-top: 16vh;
+    height: 100%;
+}
+
+.hero__img img {
+    width: 120%;
+    filter: drop-shadow(0 0 0.2rem var(--first-color));
+}
+/*========== End hero ==========*/
+
+/*========== Start feats ==========*/
+.feats {
+    padding: 60px 0
+}
+
+.feats__media {
+    margin-bottom: 40px
+}
+
+.feats__img {
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    margin: 0 auto 20px auto;
+    border: dashed 1px #1dd3f8;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.feats__img img {
+    width: 30px;
+    transform: translateX(6px);
+}
+
+.feats__media_body h5 {
+    font-weight: 600;
+    color: #000;
+}
+
+.feats__media_body p {
+    color: gray;
+}
+/*========== End feats ==========*/
+
+/*========== Start about ==========*/
+.about {
+    padding: 60px 0
+}
+
+.about__info {
+}
+
+.about__info h2 {
+    margin-bottom: 30px;
+}
+
+.about__info h2::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    height: 4px;
+    width: 30px;
+    background: var(--third-color);
+}
+
+.about__info p {
+    margin-bottom: 10px
+}
+
+.about__info ul {
+    margin-bottom: 30px;
+}
+
+.about__info li {
+    margin-bottom: 10px;
+    padding-right: 5px;
+}
+
+.about__info li i {
+    background: rgba(152, 87, 242, .2);
+    color: rgba(152, 87, 242, 1);
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 10px;
+}
+
+.about__info li:hover {
+}
+
+.about__info a {
+    color: #fff;
+    background: var(--third-color);
+    padding: 4px 20px;
+    border-radius: 20px;
+    transition: box-shadow .2s ease-in-out;
+}
+
+.about__info a:hover {
+    box-shadow: 0 .5rem 1rem rgba(152, 87, 242, 0.3);
+}
+
+.about__img img {
+    width: 80%;
+}
+/*========== End about ==========*/
+
+/*========== Start paths ==========*/
+.paths {
+    padding: 60px 0;
+    background: rgba(29, 211, 248, .2) url(../imgs/paths-bg.png) no-repeat bottom left;
+}
+
+.main__head h2 {
+    margin-bottom: 30px
+}
+
+.main__head p {
+    color: #4d4d4d;
+    width: 60%;
+    margin: 0 auto 60px auto 
+}
+
+.path__media {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #fff;
+    border: 1px dashed var(--first-color);
+}
+
+.path__media > i {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-left: 10px;
+    font-size: 22px;
+    color: var(--first-color);
+    background: rgba(29, 211, 248, .2);
+}
+
+.path__media h5 {
+    color: var(--first-color);
+}
+
+.path__media a {
+    padding: 0px 14px;
+    font-size: 12px;
+    border: 1px solid var(--first-color);
+    border-radius: 20px;
+    color: var(--first-color);
+    transition: box-shadow .2s ease-in-out;
+}
+
+.path__media a:hover {
+    box-shadow: 0 0.5rem 1rem rgba(29, 211, 248, .3);
+}
+
+.path__media a i {
+    transition: transform .2s ease-in-out;
+}
+
+.path__media a:hover i {
+    transform: translateX(-10px);
+}
+
+.path__more {
+    display: block;
+    width: 100px;
+    margin: auto;
+    padding: 4px 20px;
+    border-radius: 20px;
+    color: #fff;
+    background: var(--first-color);
+    transition: box-shadow .2s ease-in-out;
+}
+
+.path__more:hover {
+    color: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(29, 211, 248, .5);
+}
+/*========== End paths ==========*/
+
+/*========== Start prices ==========*/
+.prices {
+    padding: 60px 0
+}
+
+.prices__ctrls {
+    margin-bottom: 20px;
+}
+
+.prices__ctrls button {
+    padding: 4px 10px;
+    border: 1px solid var(--blue-dark);
+    outline: transparent;
+    color: #fff;
+    background: var(--blue-dark);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.prices__ctrls button:hover {
+    color: var(--blue-dark);
+    background: #fff;
+}
+
+.prices__ctrls button:first-child {
+    border-radius: 0 20px 20px 0;
+}
+
+.prices__ctrls button:last-child {
+    border-radius: 20px 0 0 20px;
+}
+
+.prices__ctrls button:nth-of-type(2) {
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
+.prices__ctrls__active {
+    color: var(--blue-dark) !important;
+    background: #fff !important;
+}
+
+.prices .second,
+.prices .third {
+    display: none;
+}
+
+.prices__pack {
+    border: 1px solid var(--first-color);
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 60px 10px 40px 10px;
+    margin-bottom: 20px;
+}
+
+.prices__cat {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 200px;
+    color: #fff;
+    transform: rotate(37deg) translate(58px, -20px);
+}
+
+.prices__pack h2 {
+    height: 120px;
+    width: 120px;
+    line-height: 120px;
+    margin: 0 auto 10px auto;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    padding: 4px
+}
+
+.prices__pack h5 {
+    margin-bottom: 20px;
+}
+
+.prices__pack ul {
+    text-align: right;
+}
+
+.prices__pack li {
+    line-height: 2;
+    padding: 10px 0;
+    font-weight: 600;
+}
+
+.prices__pack li:not(:last-child) {
+    border-bottom: 1px solid rgba(0,0,0,.06);
+}
+
+.prices__pack a {
+    display: block;
+    width: 150px;
+    margin: auto;
+    padding: 4px 20px;
+    border-radius: 20px;
+    color: #fff;
+    background: var(--first-color);
+    transition: box-shadow .2s ease-in-out;
+}
+
+.prices__pack a:hover {
+    box-shadow: 0 0.5rem 1rem rgba(29, 211, 248, .5);
+}
+/*========== End prices ==========*/
+
+/*========== Start contact-home ==========*/
+.contact-home {
+    background: var(--first-color);
+    padding: 60px 0
+}
+
+.contact-home p {
+    color: #fff;
+    font-size: 20px;
+    margin: 0;
+}
+
+.contact-home a {
+    color: var(--first-color);
+    background: #fff;
+    border-radius: 20px;
+    padding: 4px 30px;
+    font-weight: bold;
+    border: 2px solid transparent;
+    transition: all .2s ease-in-out;
+}
+
+.contact-home a:hover {
+    color: #fff;
+    background: var(--first-color);
+    border: 2px solid #fff;
+}
+/*========== End contact-home ==========*/
+
+/*========== Start footer ==========*/
+footer {
+    position: relative;
+    padding: 60px 0 0 0;
+    background: linear-gradient(to bottom, var(--blue-light) 0%,var(--blue-dark) 100%);
+    overflow: hidden;
+}
+
+footer::after {
+    content: url(../imgs/footer-img.png);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    animation: rotation 20s infinite linear;
+    overflow: hidden;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+.footer__heading {
+    color: var(--first-color);
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.footer__content i.fa-angle-double-left {
+    color: var(--first-color)
+}
+
+.footer__content li {
+    margin-bottom: 10px;
+}
+
+.footer__content a {
+    color: #fff
+}
+/*========== End footer ==========*/
+
+/*========== Start copyrights ==========*/
+.copyrights {
+    padding: 10px 0;
+    margin-top: 60px;
+    border-top: 1px solid rgba(255, 255, 255, .2)
+}
+
+.copyrights p {
+    margin: 0;
+    color: #fff;
+    text-transform: capitalize;
+}
+/*========== End copyrights ==========*/
+
+
+/*=============== Start screen sizes =================*/
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+    .nav__btns {
+        width: 100%;
+     }
+
+    .nav__btns li {
+        margin-bottom: 10px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 601px) and (min-width: 768px) {
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 769px) and (max-width: 992px) {
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    
+}
+/*=============== End screen sizes =================*/
+
+
+
+.bg-pronz {
+    background: #3b2011;
+}
+.color-pronz {
+    color: #3b2011;
+}
+
+.bg-gray {
+    background: #808080;
+}
+.color-gray {
+    color: #202020;
+}
+
+.bg-gold {
+    background: #d9ad2b;
+}
+.color-gold {
+    color: #bf7315;
+}
+
+.grad-pronz {
+    background: linear-gradient(to top, #3b2011 0%,#8e311a 100%);
+}
+
+.grad-gray {
+    background: linear-gradient(to top, #202020 0%,#808080 100%);
+}
+
+.grad-gold {
+    background: #bf7315;
+    background: linear-gradient(to top, #bf7315 0%,#d9ad2b 100%);
+
+}
